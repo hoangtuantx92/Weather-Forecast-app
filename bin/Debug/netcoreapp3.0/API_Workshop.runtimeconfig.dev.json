@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/corygideon/.dotnet/store/|arch|/|tfm|",
+      "/Users/corygideon/.nuget/packages"
+    ]
+  }
+}

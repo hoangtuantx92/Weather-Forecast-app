@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/corygideon/Documents/Sogeti/Workshops/API_Workshop/API_Workshop.csproj": {}
+    "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/API_Workshop.csproj": {}
   },
   "projects": {
-    "/Users/corygideon/Documents/Sogeti/Workshops/API_Workshop/API_Workshop.csproj": {
+    "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/API_Workshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/corygideon/Documents/Sogeti/Workshops/API_Workshop/API_Workshop.csproj",
+        "projectUniqueName": "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/API_Workshop.csproj",
         "projectName": "API_Workshop",
-        "projectPath": "/Users/corygideon/Documents/Sogeti/Workshops/API_Workshop/API_Workshop.csproj",
+        "projectPath": "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/API_Workshop.csproj",
         "packagesPath": "/Users/corygideon/.nuget/packages/",
-        "outputPath": "/Users/corygideon/Documents/Sogeti/Workshops/API_Workshop/obj/",
+        "outputPath": "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/corygideon/.nuget/NuGet/NuGet.Config"
@@ -35,6 +35,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[13.1.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
