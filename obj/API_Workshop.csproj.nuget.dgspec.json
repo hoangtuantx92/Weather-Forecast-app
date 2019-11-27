@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/API_Workshop.csproj": {}
+    "/Users/kevindo/ApiPractice/DotNetWorkshop/API_Workshop.csproj": {}
   },
   "projects": {
-    "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/API_Workshop.csproj": {
+    "/Users/kevindo/ApiPractice/DotNetWorkshop/API_Workshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/API_Workshop.csproj",
+        "projectUniqueName": "/Users/kevindo/ApiPractice/DotNetWorkshop/API_Workshop.csproj",
         "projectName": "API_Workshop",
-        "projectPath": "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/API_Workshop.csproj",
-        "packagesPath": "/Users/corygideon/.nuget/packages/",
-        "outputPath": "/Users/corygideon/Documents/Sogeti/Workshops/DotNetWorkshop/obj/",
+        "projectPath": "/Users/kevindo/ApiPractice/DotNetWorkshop/API_Workshop.csproj",
+        "packagesPath": "/Users/kevindo/.nuget/packages/",
+        "outputPath": "/Users/kevindo/ApiPractice/DotNetWorkshop/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/corygideon/.nuget/NuGet/NuGet.Config"
+          "/Users/kevindo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
