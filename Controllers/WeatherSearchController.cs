@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Net.Http;
+ using Newtonsoft.Json;
+
 namespace API_Workshop.Controllers
 {
     [ApiController]
@@ -39,5 +42,30 @@ namespace API_Workshop.Controllers
          
         return weather().Where(t => t.TemperatureC < 0).ToArray();
      }
+     [HttpGet]
+     [Route("{city}")]
+      public async Task<IActionResult> City(string city) {
+          using (var client = new HttpClient())
+          {
+              try
+              {
+                client.BaseAddress = new Uri("http://api.openweathermap.org");
+                var res = await client.GetAsync($"/data/2.5/weather?q={city}&appid=YOUR_API_KEY_HERE&units=metric");
+                res.EnsureSuccessStatusCode();
+
+                var result = await res.Content.ReadAsStringAsync();
+                var rawWeather = JsonConvert.DeserializeObject<OpenWeatherResponse>(result);
+                return Ok(new {
+                    Temp = rawWeather.Main.Temp,
+                    Summary = string.Join(",", rawWeather.Weather.Select(x => x.Main)),
+                    City = rawWeather.Name
+                });
+              }
+              catch (HttpRequestException HttpRequestException)
+              {
+                  return BadRequest($"Error getting weather from OpenWeahter");
+              }
+          }
+      }
     }
 }
